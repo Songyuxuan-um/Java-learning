@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/account.css">
+    <link rel="stylesheet" href="./css/reminder.css">
+    <!-- <link rel="stylesheet" href="/css/site.css"> -->
+
+
+    <title>Java Learning</title>
+</head>
+
+<body>
+    <div class="row layout">
+        <div class="col-1 g-0">
+            <nav class="nav nav-left flex-column">
+                <img class="tl" src="images/arrow.svg" alt="navigation_bar" width="30px" height="30px" />
+                <div id="profile_background">
+                    <div class="profile_wrapper tl">
+                        <a href="manageMentorAccount.html"><img src="../images/sample_profile.jpg" alt="avatar" width="100%" height="100%" /></a>
+                    </div>
+                    <div id="name" class="tl">Cheng</div>
+                </div>
+                <div class="navigation tl">
+                    <div class="wrapper">
+                        <a class="nav-link active" aria-current="page" href="homepage.html"><img src="images/home.svg" alt="Homepage"></a>
+                        <div class="message" LO>Home</div>
+                    </div>
+                    <div class="wrapper">
+                        <a class="nav-link active" aria-current="page" href="indexMentor.html"><img src="images/goal.svg" alt="Goal" width="24px" height="24px"></a>
+                        <div class="message">Goal</div>
+                    </div>
+                    <div class="wrapper ms-1">
+                        <a class="nav-link" href="index.html"><img src="images/sign_out.svg" alt="settings" width="24px" height="24px"></a>
+                        <div class="message">Sign Out</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-8 bg-secondary">
+            <div class="align-self-stretch">
+                <div class="row">
+                    <div class="col-9">
+                        <header>
+                            <h2>Java Learning</h2>
+                        </header>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <div id="date">
+                            <p id="time">
+                            </p>
+                        </div>
+                        <div class="container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="row gx-3 mb-1">
+                    <div class="col-md-2">
+                        <div id="profile_wrapper1">
+                            <img id="default_profile1" src="images/avatar.png" alt="avatar" width="32px" height="32px" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info">
+                            <!--strong>HelloWorld123</strong><br-->
+                            Mentor
+                            <input class="form-control" id="Username" name="Username" type="text" placeholder="Username (Eg.HelloWorld1)" required>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="button">
+                            <button type="submit" form="myForm" class="btn btn-primary" onclick="handleSubmit()" />Update & Save</button>
+                            <button1 onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger">Delete Account</button1>
+
+                            <div id="id01" class="modal-custom">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Delete Account">&times;</span>
+                                <form class="modal-content" action="/action_page.php">
+                                    <div class="del">
+                                        <h1>Delete Account</h1>
+                                        <p> Are you sure you want to delete your account?</p>
+
+                                        <div class="clearfix">
+                                            <a href="updatedMentorProfile.html" class="cancelbtn">Cancel</a>
+                                            <a href="index.html" class="deletebtn">Delete</a>
+                                            <!--button type="button" class="cancelbtn">Cancel</button-->
+                                            <!--button type="button" class="deletebtn">Delete</button-->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="button">
+                 <p align="right">
+                    <button type="button" class="btn btn-primary">Update & Save</button>
+                    <button type="button" class="btn btn-danger">Delete Account</button>
+                  </p>
+                </div-->
+                <div class="minibox">
+                    <form action="updatedAcc.html" id="myForm" method="GET">
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (Username)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="FirstName"><strong>First name</strong></label>
+                                <input class="form-control" id="FirstName" name="FirstName" type="text" placeholder="Hello" required>
+                            </div>
+                            <!-- Form Group (email address)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="LastName"><strong>Last name</strong></label>
+                                <input class="form-control" id="LastName" name="LastName" type="text" placeholder="World" required>
+                            </div>
+                        </div>
+                        <!-- Form Row-->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (first name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="Age"><strong>Age</strong></label>
+                                <input class="form-control" id="Age" name="Age" type="number" placeholder="20" required>
+                            </div>
+                            <!-- Form Group (last name)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="Gender"><strong>Gender</strong></label>
+                                <input class="form-control" id="Gender" name="Gender" type="text" placeholder="Male" required>
+                            </div>
+                        </div>
+                        <!-- Form Row  -->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (age)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="Birthday"><strong>Birthday</strong></label>
+                                <input class="form-control" id="Birthday" name="Birthday" type="date" required>
+                            </div>
+                            <!-- Form Group (gender)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="Occupation"><strong>Occupation</strong></label>
+                                <input class="form-control" id="Occupation" name="Occupation" type="text" placeholder="Student" required>
+                            </div>
+                        </div>
+                        <!-- Form Row  -->
+                        <div class="row gx-3 mb-3">
+                            <!-- Form Group (phone number)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="Phone"><strong>Phone Number</strong></label>
+                                <input class="form-control" id="Phone" name="Phone" type="tel" placeholder="012-3456789" required>
+                            </div>
+                            <!-- Form Group (occupation)-->
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="EmailAddress"><strong>Email address</strong></label>
+                                <input class="form-control" id="EmailAddress" name="EmailAddress" type="email" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Upload photo button-->
+                            <!--label for="myPhoto">Upload your photo: </label-->
+                            <!--input type="file" id="myPhoto" name="myPhoto"-->
+                            <div class="upload-btn-wrapper">
+                                <input type="file" id="myfile" hidden/>
+                                <label for="myfile">Upload a photo</label>
+                                <!-- <span>No file chosen</span> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 ">
+            <div class="m-3 mb-4 ">
+                <h2>Activities</h2>
+            </div>
+            <nav>
+                <div class="nav nav-tabs justify-content-center " id="nav-tab " role="tablist ">
+                    <button class="nav-link active " id="nav-Goal-tab " data-bs-toggle="tab " data-bs-target="#nav-Goal " type="button " role="tab " aria-controls="nav-Goal " aria-selected="true ">Reminder</button>
+                </div>
+            </nav>
+            <div class="tab-content " id="nav-tabContent ">
+                <!-- <div class="tab-pane fade show active " id="nav-Goal " role="tabpanel " aria-labelledby="nav-Goal-tab ">...</div>
+                <div class="tab-pane fade " id="nav-profile " role="tabpanel " aria-labelledby="nav-profile-tab ">...</div> -->
+                <!-- <div class = "block1"> 
+                    <span class="close">x</span>               
+                        <h6 style ="text-align: left; color:black; font-weight: bolder; font-family:cursive; font-size: large; text-decoration-line: underline;">Goal 1</h6>                                        
+                        <h5 style="text-align: left;color: black; font-family:cursive; ">Reminder in:</h5>        
+                        <div class="container" style="float: left; background-color: crimson;border-radius: 20px; color: white; text-align: center; font-size: x-large;">
+                            <p id="timeremain"></p>
+                        </div>                      
+                </div> -->
+            </div>
+            <div class="row row-cols-1 d-grid gap-2 scroll_timeline scroll">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script type="text/javascript" src="scripts/account.js"></script>
+    <script type="text/javascript " src="scripts/reminder.js "></script>
+
+</body>
+
+</html>

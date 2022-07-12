@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/mentor.css">
+
+    <title>Java Learning</title>
+</head>
+
+<body>
+    <div class="custom-container">
+        <div class="col-1 g-0">
+            <nav class="nav nav-left flex-column">
+                <img src="images/arrow.svg" alt="navigation_bar" width="30px" height="30px" />
+                <div id="profile_background">
+                    <div class="profile_wrapper">
+                        <a href="updatedMentorProfile.html"><img src="../images/sample_profile.jpg" alt="avatar" width="100%" height="100%" /></a>
+                    </div>
+                    <div id="name">Cheng</div>
+                </div>
+                <div class="navigation">   
+                    <div class="wrapper">
+                        <a class="nav-link active" aria-current="page" href="indexMentor.html"><img src="images/goal.svg" alt="Goal" width="24px" height="24px"></a>
+                        <div class="message">Goal</div>
+                    </div>
+                    <div class="wrapper ms-1">
+                        <a class="nav-link" href="index.html"><img src="images/sign_out.svg" alt="settings" width="24px" height="24px"></a>
+                        <div class="message">Sign Out</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-8 bg-secondary ps-3 pe-3">
+            <div class="row">
+                <div class="col-9">
+                    <header>
+                        <h2>Mentee List</h2>
+                    </header>
+                </div>
+                <div class="col-2 mt-3">
+                    <div id="date">
+                        <p id="time">
+                        </p>
+                    </div>
+                    <div class="container">
+                    </div>
+                </div>
+            </div>
+            <div id="display_mentee">
+                <!-- <div id="no_mentee">
+                    <img src="images/no_mentee.png" alt="No Mentee Available" width="50%" height="50%">
+                    <p>You have no mentee yet</p>
+                </div> -->
+                <div class="scroll_mentee scroll">
+                    <div id="list-example" class="list-group">
+                        <!--Hightlight from here-->
+                        <!-- <a class="list-group-item list-group-item-action shadow rounded" href="view-mentee-goalGoalpage.html">
+                            <div class="profile_wrapper">
+                                <img src="../images/sample_mentee.jpeg" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Tan Hou Ren</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="manageGoal.html">
+                            <div class="profile_wrapper">
+                                <img src="../images/sample_mentee2.jpg" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Goh Kang Yue</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="manageGoal.html">
+                            <div class="profile_wrapper">
+                                <img src="../images/sample_mentee3.jfif" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Chong Chien Wang</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="manageGoal.html">
+                            <div class="profile_wrapper">
+                                <img src="../images/sample_mentee4.jpg" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Chue Kai Ze</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="manageGoal.html">
+                            <div class="profile_wrapper">
+                                <img src="../images/avatar.png" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Lim Zi Xuan</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="manageGoal.html">
+                            <div class="profile_wrapper">
+                                <img src="../images/avatar.png" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Song Yu Xuan</div>
+                        </a> -->
+                        <!--Hightlight until here-->
+                        <!-- <a class="list-group-item list-group-item-action shadow rounded " href="#list-item-1 ">
+                            <div class="profile_wrapper">
+                                <img src="../images/avatar.png" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Song Yu Xuan</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="#list-item-1 ">
+                            <div class="profile_wrapper">
+                                <img src="../images/avatar.png" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Song Yu Xuan</div>
+                        </a>
+                        <a class="list-group-item list-group-item-action shadow rounded " href="#list-item-1 ">
+                            <div class="profile_wrapper">
+                                <img src="../images/avatar.png" alt="avatar" width="100%" height="100%" />
+                            </div>
+                            <div class="mentee_name">Song Yu Xuan</div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 ">
+            <div class="m-3 mb-4 ">
+                <h2>Mentee Timeline</h2>
+            </div>
+            <div class="row row-cols-1 d-grid gap-2 scroll_timeline scroll ps-2 pt-2">
+                <!-- <div class="col ">
+                    <div class="card w-85 bg-secondary ">
+                        <button type="button " class="btn-close close " aria-label="Close "></button>
+                        <div class="card-body ">
+                            <div class="card-title ">
+                                <div class="profile_wrapper">
+                                    <img src="../images/sample_mentee.jpeg" alt="avatar" width="100%" height="100%" />
+                                </div>
+                                <div class="mentee_name timeline_name fs-5 ">Hou Ren</div>
+                            </div>
+                            <p class="card-text ">Hou Ren sets a new goal!</p>
+                            <hr>
+                            <a class="go_mentee_page " href="# ">View &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card w-85 bg-secondary ">
+                        <button type="button " class="btn-close close " aria-label="Close "></button>
+                        <div class="card-body ">
+                            <div class="card-title ">
+                                <div class="profile_wrapper mentee_profile "></div>
+                                <div class="mentee_name timeline_name fs-5 ">Hou Ren</div>
+                            </div>
+                            <p class="card-text ">Hou Ren sets a new goal!</p>
+                            <hr>
+                            <a class="go_mentee_page " href="# ">View &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card w-85 bg-secondary ">
+                        <button type="button " class="btn-close close " aria-label="Close "></button>
+                        <div class="card-body ">
+                            <div class="card-title ">
+                                <div class="profile_wrapper mentee_profile "></div>
+                                <div class="mentee_name timeline_name fs-5 ">Hou Ren</div>
+                            </div>
+                            <p class="card-text ">Hou Ren sets a new goal!</p>
+                            <hr>
+                            <a class="go_mentee_page " href="# ">View &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card w-85 bg-secondary ">
+                        <button type="button " class="btn-close close " aria-label="Close "></button>
+                        <div class="card-body ">
+                            <div class="card-title ">
+                                <div class="profile_wrapper mentee_profile "></div>
+                                <div class="mentee_name timeline_name fs-5 ">Hou Ren</div>
+                            </div>
+                            <p class="card-text ">Hou Ren sets a new goal!</p>
+                            <hr>
+                            <a class="go_mentee_page " href="# ">View &gt;&gt;</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="scripts/mentor_script2.js"></script>
+    <script type="text/javascript " src="scripts/mentor_mentee.js "></script>
+</body>
+
+
+</html>
