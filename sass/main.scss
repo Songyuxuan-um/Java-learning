@@ -1,0 +1,13 @@
+$secondary:#FFEEEE;
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+$custom-theme-colors:( "newcolor": #d63822, "newsecondcolor": #e29282, "link": blue);
+$theme-colors: map-merge($theme-colors, $custom-theme-colors); // You should already have this, so no need to copy this part.
+// Start copying at the line below 
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge( $theme-colors-rgb, ( "black": to-rgb($black), "white": to-rgb($white), "body": to-rgb($body-color)));
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+$secondary:#FFEEEE;
+@import '../node_modules/bootstrap/scss/bootstrap';
+$theme-colors: map-merge($theme-colors, $custom-theme-colors); // You should already have this, so no need to copy this part.
