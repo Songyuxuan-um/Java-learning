@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    /* display: flex;
+    align-items: stretch; */
+    /* height: 100vh; */
+    /*Display based on 100% height of the viewport*/
+}
+
+.align-self-stretch {
+    /* display: flex; */
+    /* flex: 2; */
+    /* justify-content: space-between; */
+    background-color: #FFEEEE;
+}
+
+header {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.event h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#date {
+    /* display: flex; */
+    height: auto;
+    width: auto;
+    /* margin-right: 30px;
+    margin-top: 10px; */
+    background-color: #FFB4A2;
+    border-radius: 15px;
+}
+
+#time {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    object-fit: cover;
+}
+
+.mentee_profile {
+    width: 50px;
+    height: 50px;
+}
+
+.profile_wrapper {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    /* padding: 0.5rem 1rem; */
+    position: relative;
+    overflow: hidden;
+}
+
+#profile_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #FFE4E1;
+}
+
+.tl {
+    margin-left: 17%;
+}
+
+.navigation {
+    display: flexbox;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.message {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+/*Override the styles in bootstrap.css*/
+
+.nav-left {
+    background-color: #FFB4A2;
+    align-items: center;
+    /* width: fit-content;
+    height: auto; */
+    height: 100vh;
+}
+
+.nav-link {
+    padding-bottom: 30px;
+}
+
+
+/*.nav-link:hover  + .message = When i hover over .nav-link element, the next immediate element with class .message will be triggered*/
+
+.nav-link:hover+.message {
+    display: block;
+    position: absolute;
+    left: 43px;
+    bottom: 45px;
+    padding: 5px;
+    width: max-content;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+    font-size: x-small;
+    opacity: 0.6;
+}
+
+.box {
+    background: #FBE1BB;
+    height: 85%;
+    /*600px*/
+    width: 95%;
+    /*960px*/
+    padding: 30px;
+    margin: 20px;
+}
+
+.minibox {
+    /*background: #A193F9;*/
+    background: #FFB4A2;
+    height: 80%;
+    /*600px*/
+    width: 96%;
+    /*960px*/
+    padding: 50px;
+    margin: 20px;
+}
+
+#default_profile1 {
+    width: 90px;
+    height: 95px;
+    position: absolute;
+    top: 2px;
+    /*10px*/
+    left: 0.5px;
+}
+
+#profile_wrapper1 {
+    margin-left: 25px;
+    width: 90px;
+    height: 90px;
+    border-radius: 75%;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.info {
+    font-size: 125%;
+    float: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.info #mentee {
+    font-size: 80%;
+}
+
+.button {
+    float: right;
+    margin-top: 25px;
+    margin-right: 12px;
+}
+
+
+/* Set a style for all buttons */
+
+
+/*
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+*/
+
+
+/* Set a style for all buttons */
+
+.clearfix a {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Float cancel and delete buttons and add an equal width */
+
+.cancelbtn,
+.deletebtn {
+    text-decoration: none;
+    float: left;
+    width: 50%;
+}
+
+
+/* Add a color to the cancel button */
+
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+
+/* Add a color to the delete button */
+
+.deletebtn {
+    background-color: #f44336;
+    color: black;
+}
+
+
+/* Add padding and center-align text to the container */
+
+.del {
+    padding: 16px;
+    text-align: center;
+}
+
+
+/* The Modal (background) */
+
+.modal-custom {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+
+/* hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+} */
+
+
+/* The Modal Close Button (x) */
+
+.button .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .deletebtn {
+        width: 100%;
+    }
+}
+
+
+/* 
+.upload-btn-wrapper {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+*/
+
+
+/*
+.upbtn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+*/
+
+
+/* 
+.upload-btn-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+ */
+
+.upload-btn-wrapper label {
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    /* margin-top: 1rem; */
+}
+
+.find-mentor {
+    position: relative;
+    background: none;
+    border: none;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+.find-mentor:hover+.message {
+    display: block;
+    position: absolute;
+    left: 40px;
+    bottom: 27px;
+    padding: 5px;
+    width: max-content;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+    font-size: x-small;
+    opacity: 0.6;
+}

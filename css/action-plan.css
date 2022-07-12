@@ -1,0 +1,51 @@
+.ap-activity-card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.ap-card {
+    text-decoration: none;
+    color: black;
+}
+
+#ap-activity-pending-count {
+    color: #F89133;
+}
+
+#ap-activity-completed-count {
+    color: #11D300;
+}
+
+.ap-activity-pending-completed {
+    font-size: small;
+    font-weight: normal;
+    color: #8EA3B7;
+}
+
+.ap-goal-progress {
+    background-image: linear-gradient(to bottom right, #F3AF7D, rgb(255, 255, 255));
+    color: #6E6F67;
+}
+
+.ap-add-activity-button {
+    font-size: smaller;
+}
+
+.custom-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+#ap-edit-btn {
+    color: gray;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gh-rem {
+    background-color: #FFFFFF;
+}

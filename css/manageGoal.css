@@ -1,0 +1,145 @@
+.ap-goal-card-link {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+}
+
+.ap-card {
+    text-decoration: none;
+}
+
+#ap-goal-pending-count {
+    color: black;
+}
+
+#ap-goal-completed-count {
+    color: black;
+}
+
+.ap-goal-pending-completed {
+    font-size: small;
+    font-weight: normal;
+    color: #8EA3B7;
+}
+
+.ap-goal-progress {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    color: #6E6F67;
+}
+
+.ap-add-activity-button {
+    font-size: smaller;
+    background-color: blue;
+}
+
+#ap-goal-list {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.custom-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.card-title {
+    text-align: auto;
+    font-size: larger;
+    color: black;
+}
+
+#add-goal-btn {
+    font-size: smaller;
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+
+#ap-goal-completed-card {
+    background-image: linear-gradient( 95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%);
+}
+
+#ap-goal-pending-card {
+    background-image: linear-gradient( 95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%);
+}
+
+#ap-goal-pending-label {
+    color: black;
+}
+
+#ap-goal-completed-label {
+    color: black;
+}
+
+dl:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+dd {
+    padding: .5em 0;
+}
+
+dl {
+    width: 60%;
+}
+
+dt,
+dd {
+    display: inline-block;
+    width: 30%;
+}
+
+dt {
+    text-align: left;
+    font-weight: bold;
+    clear: left;
+    float: left;
+}
+
+dd {
+    width: 70%;
+    padding-left: 1em;
+    clear: right;
+}
+
+dd+dd {
+    float: left;
+    clear: both;
+}
+
+dt:first-child {
+    padding-top: .5em;
+}
+
+dd+dt {
+    clear: both;
+    padding-top: .5em;
+}
+
+dt+dt {
+    width: 100%;
+    float: none;
+    padding: 0 70% 0 0;
+}
+
+dt+dt+dd {
+    margin-top: -2em;
+}
+
+dt+dt+dd+dt {
+    margin-top: 2em;
+}

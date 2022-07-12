@@ -1,0 +1,175 @@
+.firstcol {
+    background-image: linear-gradient(to bottom, rgb(78, 78, 227), rgb(121, 121, 199), rgb(188, 188, 201));
+    border-radius: 20px;
+}
+
+.col-4 {
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+.topic {
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to bottom, rgb(77, 177, 243), rgb(161, 213, 213), rgb(188, 206, 201));
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.smartdes {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: solid black;
+    border-right: solid black;
+    background-image: linear-gradient(to right, rgb(77, 177, 243), rgb(161, 213, 213), rgb(188, 206, 201));
+    font-size: 18px;
+    text-align: justify;
+    width: 100%;
+    height: 11vh;
+    font-size: 13px;
+    overflow: auto;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(236, 230, 230);
+    border-radius: 10px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.example {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#stepleft {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20%;
+    margin: auto;
+    text-align: center;
+    color: rgb(65, 57, 66);
+    font-family: cursive;
+    font-weight: bolder;
+    float: right;
+}
+
+#feedback {
+    border-radius: 10px;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, rgb(226, 178, 34), rgb(217, 200, 104));
+    overflow: auto;
+}
+
+#timeremain {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#timedisplay {
+    float: right;
+    background-color: rgba(224, 102, 127, 0.979);
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+
+/*Start of Pie Chart Progress CSS*/
+
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+.pie {
+    --p: 20;
+    --b: 22px;
+    --c: darkred;
+    --w: 200px;
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pie:before {
+    inset: 0;
+    background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+    inset: calc(50% - var(--b)/2);
+    background: var(--c);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.animate {
+    animation: p 1s .5s both;
+}
+
+.no-round:before {
+    background-size: 0 0, auto;
+}
+
+.no-round:after {
+    content: none;
+}
+
+@keyframes p {
+    from {
+        --p: 0
+    }
+}
+
+
+/*End of Pie Chart Progress CSS*/

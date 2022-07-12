@@ -1,0 +1,24 @@
+.content {
+    background-color: #FFEEEE;
+}
+
+#gh-goal-title {
+    /* background-color: #FBE1BB; */
+    font-family: 'Proza Libre', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* .scroll_timeline_mentee {
+    70% of the height of theviewport
+    height: 100%;
+}
+ */
+
+.gh-rem .card-header {
+    background-color: #f3e4e4;
+}
+
+a:hover {
+    text-decoration: none;
+}

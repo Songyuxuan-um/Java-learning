@@ -1,0 +1,81 @@
+.scroll {
+    /*Make a list of items scrollable*/
+    overflow-y: auto;
+    width: 100%;
+}
+
+.scroll_timeline_mentee {
+    /* 70% of the height of theviewport*/
+    height: 85vh;
+}
+
+.scroll_timeline_mentee_inner {
+    /* 70% of the height of theviewport*/
+    height: 87vh;
+}
+
+.scroll_timeline_mentee_action_add {
+    /* 70% of the height of theviewport*/
+    height: 105vh;
+}
+
+.scroll_timeline_mentee_action_inner {
+    /* 70% of the height of theviewport*/
+    height: 95vh;
+}
+
+.scroll_timeline_mentee_action {
+    /* 70% of the height of theviewport*/
+    height: 90vh;
+}
+
+.scroll_timeline_mentee_edit_goal{
+    /* 70% of the height of theviewport*/
+    height: 100vh;
+}
+
+.scroll_timeline_mentee_add_goal{
+    /* 70% of the height of theviewport*/
+    height: 120vh;
+}
+
+.scroll_timeline_mentee_Goal{
+    /* 70% of the height of theviewport*/
+    height: 110vh;
+}
+
+
+/* .col-1 {
+    flex: 0 0 auto;
+    width: 7.33333333%;
+}
+ */
+
+.rem .card {
+    border-radius: 0.65rem;
+    margin: 5%;
+    background-color: #FFEEEE;
+}
+
+.rem .card-body {
+    padding: 5%;
+    background-color: #FFEEEE;
+}
+
+.close:hover {
+    background: #bbb;
+}
+
+.close {
+    cursor: pointer;
+    margin-left: 93%;
+    padding: 1px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    background-color: #FFEEEE;
+}
+
+.rem.card-header {
+    background-color: #f3e4e4;
+}

@@ -1,0 +1,197 @@
+.box-custom {
+    background: #FBE1BB;
+    height: 85%;
+    width: 95%;
+    padding-left: 4%;
+    padding-right: 8%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin: 20px;
+}
+
+.rounded-background {
+    border-radius: 20px;
+}
+
+.comment-background {
+    background-color: rgba(241, 129, 232, 0.267);
+}
+
+.d-flex-goal-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.table-bordered-custom> :not(caption)>* {
+    border-width: 3px 0;
+    border-color: rgba(175, 121, 21, 0.63);
+}
+
+.table-bordered-custom> :not(caption)>*>* {
+    border-width: 0 3px;
+    border-color: rgba(175, 121, 21, 0.644);
+}
+
+.list-group-item-custom {
+    height: 35%;
+}
+
+.overflow-content {
+    height: 8vh;
+    overflow-y: auto;
+}
+
+.overflow-content-list-group {
+    height: 60vh;
+    overflow-y: auto;
+}
+
+.btn-close-custom {
+    float: right;
+    position: relative;
+    bottom: 10%;
+    left: 5%;
+}
+
+.overflow-content-list-group::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    /* padding: 2px 0; */
+    background-color: #404040;
+}
+
+.overflow-content::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-content-list-group::-webkit-scrollbar {
+    width: 5px;
+}
+
+.overflow-content-list-group::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #737272;
+    border: 1px solid #000;
+}
+
+.d-flex-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.d-flex-custom-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.mt-2-custom {
+    margin-top: 0.4rem !important;
+}
+
+.mt-5-custom {
+    margin-top: 4rem !important;
+}
+
+
+/*For the time remaining part*/
+
+.mt-5-custom-2 {
+    margin-top: 7.5rem !important;
+}
+
+.ms-5-custom {
+    margin-left: 7rem !important;
+}
+
+.btn-custom {
+    background-color: rgba(223, 158, 80, 0.815);
+}
+
+.btn-custom-2 {
+    background-color: rgba(212, 139, 50, 0.959);
+    color: white;
+    margin-left: 25%;
+    width: 70%;
+}
+
+#timeremain {
+    text-align: center;
+    font-weight: bold;
+}
+
+#timedisplay {
+    background-color: rgb(233, 106, 131);
+    width: fit-content;
+    border-radius: 10px;
+}
+
+
+/*Start of Pie Chart Progress CSS*/
+
+@property --p {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+}
+
+.pie {
+    --p: 20;
+    --b: 22px;
+    --c: darkred;
+    --w: 200px;
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    margin: 5px;
+    place-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.pie:before,
+.pie:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+}
+
+.pie:before {
+    inset: 0;
+    background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%), #0000 0);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+    inset: calc(50% - var(--b)/2);
+    background: var(--c);
+    transform: rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+}
+
+.animate {
+    animation: p 1s .5s both;
+}
+
+.no-round:before {
+    background-size: 0 0, auto;
+}
+
+.no-round:after {
+    content: none;
+}
+
+@keyframes p {
+    from {
+        --p: 0
+    }
+}
+
+
+/*End of Pie Chart Progress CSS*/

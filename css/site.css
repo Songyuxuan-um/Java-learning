@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.align-self-stretch {
+    /* display: flex; */
+    /* flex: 2; */
+    /* justify-content: space-between; */
+    background-color: #FFEEEE;
+}
+
+header {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.event h2 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#date {
+    /* display: flex; */
+    height: auto;
+    width: auto;
+    /* margin-right: 30px;
+    margin-top: 10px; */
+    background-color: #FFB4A2;
+    border-radius: 15px;
+}
+
+#time {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Extra styles added here*/
+
+img {
+    object-fit: cover;
+}
+
+.mentee_profile {
+    width: 50px;
+    height: 50px;
+}
+
+.profile_wrapper {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    /* padding: 0.5rem 1rem; */
+    position: relative;
+    overflow: hidden;
+}
+
+#profile_background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #FFE4E1;
+}
+
+.tl {
+    margin-left: 17%;
+}
+
+.mentor-invitation-message {
+    padding: 3px 7px 3px 7px;
+    margin-right: 5px;
+    background-color: #B4FF9F;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    /*Add the animation here*/
+    animation-name: faded;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+}
+
+.find-mentor {
+    position: relative;
+    background: none;
+    border: none;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+.find-mentor:hover+.message {
+    display: block;
+    position: absolute;
+    left: 40px;
+    bottom: 27px;
+    padding: 5px;
+    width: max-content;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+    font-size: x-small;
+    opacity: 0.6;
+}
+
+
+/*Animation declaration*/
+
+@keyframes faded {
+    0%,
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+
+/* Extra styles added here*/
+
+.navigation {
+    display: flexbox;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.message {
+    display: none;
+}
+
+.message-custom {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+}
+
+
+/*Override the styles in bootstrap.css*/
+
+.nav-left {
+    background-color: #FFB4A2;
+    align-items: center;
+    /* width: fit-content;
+    height: auto; */
+    height: 100%;
+    max-width: 10rem;
+    min-width: 5rem;
+    position: sticky;
+}
+
+.nav-link {
+    padding-bottom: 30px;
+}
+
+
+/*.nav-link:hover  + .message = When i hover over .nav-link element, the next immediate element with class .message will be triggered*/
+
+.nav-link:hover+.message {
+    display: block;
+    position: absolute;
+    left: 43px;
+    bottom: 45px;
+    padding: 5px;
+    width: max-content;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+    font-size: x-small;
+    opacity: 0.6;
+}
+
+.nav-link:hover+.message-custom {
+    display: block;
+    position: absolute;
+    left: 43px;
+    bottom: 30px;
+    padding: 5px;
+    width: max-content;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+    font-size: x-small;
+    opacity: 0.6;
+}
+
+.box {
+    background: #FBE1BB;
+    height: 85%;
+    width: 95%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 20px;
+}
+
+.goal-page-navigation {
+    font-size: small;
+}
+
+.goal-page-subtext {
+    font-size: x-small;
+    font-weight: bold;
+    color: grey;
+}
+
+.card {
+    border-radius: .75rem;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* .card-left {
+    padding: 6%;
+} */
+
+.card-left-activity-card {
+    overflow: scroll;
+    max-height: 18em;
+}
+
+.card-left-activity-card::-webkit-scrollbar {
+    display: none;
+}
+
+.card-right {
+    margin: 0%;
+    padding: 7%;
+    border: 0px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 0%;
+}
+
+.container {
+    padding: 1.8%;
+    padding-top: 0%;
+}
+
+.action-plan-activity {
+    font-size: large;
+}
+
+.action-plan-brief-description {
+    font-size: x-small;
+}
+
+.action-plan-details {
+    font-size: xx-small;
+}
+
+.action-plan-inner-card {
+    background-image: linear-gradient(to bottom, #91a3f1c3, rgb(255, 255, 255));
+    border: 0px;
+    text-decoration: none;
+}
+
+.action-plan-inner-card-option {
+    background-color: #5b76f1;
+    border-bottom-left-radius: 70px;
+    padding: 20%;
+    margin-right: 30%;
+}
+
+.action-plan-inner-card-option-text {
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 50%;
+    border-bottom-left-radius: 70px;
+    text-align: center;
+    padding-left: 20%;
+    padding-bottom: 25%;
+}
+
+.bullet li a:before {
+    font-family: "Material Icons";
+    content: "\e5cc";
+}
+
+.action-plan-activity-pending-card {
+    background-color: #FFF2E5;
+    border: 0px;
+}
+
+.action-plan-activity-completed-card {
+    background-color: #E5FFEB;
+    border: 0px;
+}
+
+.action-plan-activity-pending-completed-count {
+    font-size: x-large;
+    text-align: right;
+    margin-top: 20%;
+}
+
+.content {
+    flex: 1;
+    /* padding: 5rem; */
+}
+
+.custom-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #FBE1BB;
+    border-color: #FBE1BB;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #FBE1BB;
+    border-color: #FBE1BB;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: black;
+    background-color: #FBE1BB;
+    border-color: #FBE1BB;
+    box-shadow: 0 0 0 0.25rem #e7ca9f;
+}
+
+.btn-check:checked+.btn-primary,
+.btn-check:active+.btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle {
+    color: black;
+    background-color: #FBE1BB;
+    border-color: #FBE1BB;
+}
+
+.btn-check:checked+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem #e7ca9f;
+}
+
+.btn-primary:disabled,
+.btn-primary.disabled {
+    color: #fff;
+    background-color: #FBE1BB;
+    border-color: #FBE1BB;
+}
+
+.find-mentor {
+    position: relative;
+    background: none;
+    border: none;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+.find-mentor:hover+.message {
+    display: block;
+    position: absolute;
+    left: 40px;
+    bottom: 27px;
+    padding: 5px;
+    width: max-content;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+    font-size: x-small;
+    opacity: 0.6;
+}
+
+
+/* Design the scrollbar*/
+
+.scroll::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    /* padding: 2px 0; */
+    background-color: #404040;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #737272;
+    border: 1px solid #000;
+}

@@ -1,0 +1,146 @@
+body {
+    background-color: #FFEEEE;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-reminder {
+    width: 42px;
+    height: 42px;
+    /* background-image: url(images/OIP-C.jpg); */
+    background-size: 100%;
+    color: #ff0000;
+    font-size: 24px;
+    position: absolute;
+    /* left: 350px;
+    top: 10px; */
+    transition: 0.5s;
+}
+
+.show {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 4px 4px #FFB4A2;
+    background-color: #fffdfc;
+    border-radius: 2px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.showStyle {
+    width: 597px;
+    height: 311px;
+    opacity: 1;
+}
+
+
+/*.close1 {
+    position: absolute;
+    left: 500px;
+    top: 30px;
+   background: none;
+   border: none;
+   font-weight: bold;}*/
+
+.show c {
+    font-size: 1.6rem;
+    text-indent: 1.5rem;
+    margin-top: -100px;
+    /*transition: 0.5s;*/
+    color: rgb(216, 128, 128);
+}
+
+.show b {
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    color: #FFB4A2;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.selectOptionBox {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: -78px;
+    transition: 0.5s;
+    transform: translateX(50%);
+}
+
+form select {
+    width: 162px;
+    /*宽*/
+    height: 100%;
+    left: 0px;
+    /*高*/
+    top: 100px;
+    background-color: #FFEEEE;
+    /*元素背景颜色*/
+    border: 1px solid #f1e8e8;
+    /*边框线*/
+    color: #151515;
+    /*字体颜色*/
+    outline: none;
+    /*去掉黑框*/
+    margin: 0px 18px 30px 0px;
+    /*外边距*/
+    font-size: 16px;
+    /*字体大小*/
+}
+
+form option {
+    width: 160px;
+    height: 30px;
+}
+
+i {
+    position: 0px;
+}
+
+.selectBox {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    bottom: 15px;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(50%);
+}
+
+.selectBox .button-close {
+    color: #0e0d0d;
+    background-color: #f7f4f4;
+}
+
+.selectBox .button-close,
+.selectBox .button-save {
+    width: 45px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 0 1px 1px #FFB4A2;
+}
+
+.selectBox .button-close:hover,
+.selectBox .button-save:hover {
+    width: 60px;
+    background-color: #FFB4A2;
+}
+
+.selectBox .button-close:hover {
+    background-color: #FFB4A2;
+}
